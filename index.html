@@ -2,8 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>relative rotations</title>
-    <link href="../../css/impress-common.css" rel="stylesheet" />
+    <title>InfoRange</title>
+    <link href="css/impress-common.css" rel="stylesheet" />
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+
     <style type="text/css" media="screen">
 #overview {
     background: none;
@@ -51,6 +61,10 @@
     background-color: cyan;
 }
 
+.step.ring3 {
+    background-color: rgb(29, 255, 40);
+}
+
 .step.box {
     background-color: purple;
     opacity: 70%;
@@ -59,6 +73,10 @@
 .step.box1 {
     background-color: lightblue;
 }
+#map { 
+  height: 66%; 
+}
+
     </style>
   </head>
 
@@ -74,7 +92,7 @@
               -->
           </div>
       </div>
-
+<!-- 
       <div id="box-front" class="step box" data-x="-3000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">Front
           <p>There's two nested box here.</p>
       </div>
@@ -88,7 +106,8 @@
       <div id="box-left" class="step box" data-rel-reset data-rel-x="500" data-rel-z="-500" data-rel-rotate-y="90">Left</div>
       <div id="box-left1" class="step box1" data-rel-reset data-rel-z="-200" data-scale="0.6">Inside Left</div>
       <div id="box-bottom1" class="step box1" data-rel-reset data-rel-x="300" data-rel-z="-300" data-rel-rotate-y="90" data-scale="0.6">Inside Bottom</div>
-      <div id="box-bottom" class="step box" data-rel-reset data-rel-z="200">Bottom</div>
+      <div id="box-bottom" class="step box" data-rel-reset data-rel-z="200">Bottom</div> 
+    -->
 
       <div id="ring1-1" class="step" data-rel-reset="all" data-x="0" data-y="0" data-z="0" data-rotate-y="10">
         <p>Slide one</p>
@@ -103,7 +122,8 @@
       </div>
 
       <div id="ring1-3" class="step">
-        <p>Slide three</p>
+        <p> Sentinel2 Data </p>
+        <div id="map"></div>
       </div>
 
       <div id="ring1-4" class="step">
@@ -126,7 +146,7 @@
         <p>Slide eight</p>
       </div>
 
-      <div id="ring2-1" class="step ring2" data-rel-reset="all" data-x="-500" data-y="0" data-z="-1514" data-rotate-x="90" data-rotate-y="270" data-rotate-z="0">
+      <div id="ring2-1" class="step ring2" data-rel-reset="all" data-x="500" data-y="0" data-z="-1514" data-rotate-x="90" data-rotate-y="270" data-rotate-z="0">
         <p>Slide one</p>
         <p>This is another ring of slides.</p>
         <p>Except for the this slide, its code is just cloned from the yellow ring.</p>
@@ -160,12 +180,49 @@
       <div id="ring2-8" class="step ring2">
         <p>Slide eight</p>
       </div>
+
+    <div id="ring3-1" class="step ring3" data-rel-reset="all" data-x="-3500" data-y="0" data-z="-1514" data-rotate-x="90" data-rotate-y="270" data-rotate-z="0">
+      <p>Slide one</p>
+      <p>This is another ring of slides.</p>
+      <p>Except for the this slide, its code is just cloned from the yellow ring.</p>
+      <p>Just change the position of first slide, all the following slides are position relatived to it.</p>
     </div>
+
+    <div id="ring3-2" class="step ring3" data-rel-rotate-y="45" data-rel-z="-354" data-rel-x="854" data-rel-y="0">
+      <p>Slide two</p>
+    </div>
+
+    <div id="ring3-3" class="step ring3">
+      <p>Slide three</p>
+    </div>
+
+    <div id="ring3-4" class="step ring3">
+      <p>Slide four</p>
+    </div>
+
+    <div id="ring3-5" class="step ring3">
+      <p>Slide five</p>
+    </div>
+
+    <div id="ring3-6" class="step ring3">
+      <p>Slide six</p>
+    </div>
+
+    <div id="ring3-7" class="step ring3">
+      <p>Slide seven</p>
+    </div>
+
+    <div id="ring3-8" class="step ring3">
+      <p>Slide eight</p>
+    </div>
+  </div>
+</div>
 
     <div id="impress-toolbar"></div>
     <div id="impress-help"></div>
 
-    <script type="text/javascript" src="../../js/impress.js"></script>
+    <script type="text/javascript" src="js/impress.js"></script>
     <script>impress().init();</script>
+    <script src="js/leaflet.js"></script>
   </body>
 </html>

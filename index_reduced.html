@@ -85,6 +85,7 @@
 .step.box1 {
     background-color: lightblue;
 }
+
 #map { 
   height: 66%; 
 }
@@ -106,24 +107,52 @@
           </div>
       </div>
       
-      <div id="box-front" class="step box" data-x="-5000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">Front
-          <p>There's two nested box here.</p>
+      <div id="box-front" class="step box" data-x="-5000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+        <p>WP 5 - 2</p>
+        <p>Develop real-time GPS-based tracking algorithms to monitor and assess e.g. grazing mobility
+          (spatio-temporal land use patterns), grazing time and duration of individual herds.</p>
       </div>
       <div id="box-right" class="step box" data-rel-x="600" data-rel-z="-600" data-rel-rotate-y="90" >
-
+        <h4>Data</h4>
+        <p><i class="fa-solid fa-object-group"></i> Multispectral images (Sentinel 2 & SPOT)</p>
+        <p><i class="fa-solid fa-satellite-dish"></i> Radar (TerraSAR-X)</p> 
+        <p style="font-size: smaller;"><i class="fa-solid fa-fingerprint" style="color: brown;"></i> Data Access Request Authorization in progress</p>
+        <p><i class="fa-solid fa-map-location-dot"></i> GPS</p>
+        
       </div>
       <div id="box-back" class="step box" data-rel-x="600" data-rel-z="-600" data-rel-rotate-y="90">
-        Back
+        <h4>Remote sensing challenges</h4>
+        <p><i class="fa-regular fa-image"></i> Image resolution</p>
+        <p><i class="fa-solid fa-cloud-sun-rain"> </i> Cloud coverage</p>
+        <p><i class="fa-solid fa-tree"></i> Tree cover</p>
+        <p><i class="fa-solid fa-droplet"></i> Identification of water</p>
+        <p></p>
+        
       </div>
       <div id="box-left" class="step box" data-rel-x="600" data-rel-z="-600" data-rel-rotate-y="90">
-        Left
+        <h4>Technical challenges</h4>
+        <p><i class="fa-solid fa-users-gear"></i> Usability</p>
+        <p><i class="fa-solid fa-signal"></i> Network cover</p>
+        <p><i class="fa-solid fa-battery-quarter"></i> Battery life of GPS logger</p>
+        <p><i class="fa-solid fa-person-running"></i> Live data</p>
+        <p><i class="fa-solid fa-arrow-up-from-bracket"></i> Data upload</p>
+
       </div>
       
-      <div id="box-top" class="step box" data-rel-reset data-x="-5000" data-y="-600" data-z="-600" data-rotate-x="90" data-rotate-y="0" data-rotate-z="-270">
-        <p> Sentinel example </p>
+      <div id="box-top" class="step box" data-rel-reset data-x="-5000" data-y="-600" data-z="-600" data-rotate-x="90" data-rotate-y="0" _data-rotate-z="-270">
+        <p><i class="fa-solid fa-satellite"></i>  Sentinel example </p>
         <div id="map"></div>
       </div>
-      <div id="box-bottom" class="step box" data-rel-z="-1200" _data-scale="0.8">Bottom</div> 
+      <div id="box-bottom" class="step box" data-rotate-x="270" data-rel-z="-1200" _data-scale="0.6">
+        <h4>Ground truth</h4>
+        <p><i class="fa-solid fa-tablet-screen-button"></i> Collect data samples</p>
+        <p><i class="fa-solid fa-cloud-sun-rain"> </i> Multispectral sensor</p>
+        <p><i class="fa-regular fa-pen-to-square"></i> additional data needed: </p>
+        <ul>
+          <li>what is 'good' pasture</li>
+          <li>how large is the daily radius of movement? (depending on animal species)</li>
+        </ul>
+      </div> 
 
 <!--       
       <div id="box-front1" class="step box1" data-rel-reset data-rel-z="-200" data-scale="0.6">Inside Front</div>

@@ -51,7 +51,7 @@
     letter-spacing: -1px;
     border: solid 2px red;
 
-    opacity: 80%;
+    opacity: 40%;
     background-image: url('pics/logo2_web.png');
     background-repeat: no-repeat;
     background-position: top right;
@@ -78,14 +78,13 @@
 }
 
 .step.box {
-    background-color: rgb(255, 169, 10);
-    _opacity: 70%;
+    background-color: purple;
+    opacity: 70%;
 }
 
 .step.box1 {
     background-color: lightblue;
 }
-
 #map { 
   height: 66%; 
 }
@@ -106,64 +105,67 @@
               
           </div>
       </div>
-      
-      <div id="box-front" class="step box" data-x="-5000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
-        <p>WP 5 - 2</p>
-        <p>Develop real-time GPS-based tracking algorithms to monitor and assess e.g. grazing mobility
-          (spatio-temporal land use patterns), grazing time and duration of individual herds.</p>
+      <!-- 
+      <div id="box-front" class="step box" data-x="-3000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">Front
+          <p>There's two nested box here.</p>
       </div>
-      <div id="box-right" class="step box" data-rel-x="600" data-rel-z="-600" data-rel-rotate-y="90" >
-        <h4>Data</h4>
-        <p><i class="fa-solid fa-object-group"></i> Multispectral images (Sentinel 2 & SPOT)</p>
-        <p><i class="fa-solid fa-satellite-dish"></i> Radar (TerraSAR-X)</p> 
-        <p style="font-size: smaller;"><i class="fa-solid fa-fingerprint" style="color: brown;"></i> Data Access Request Authorization in progress</p>
-        <p><i class="fa-solid fa-map-location-dot"></i> GPS</p>
-        
-      </div>
-      <div id="box-back" class="step box" data-rel-x="600" data-rel-z="-600" data-rel-rotate-y="90">
-        <h4>Remote sensing challenges</h4>
-        <p><i class="fa-regular fa-image"></i> Image resolution</p>
-        <p><i class="fa-solid fa-cloud-sun-rain"> </i> Cloud coverage</p>
-        <p><i class="fa-solid fa-tree"></i> Tree cover</p>
-        <p><i class="fa-solid fa-droplet"></i> Identification of water</p>
-        <p></p>
-        
-      </div>
-      <div id="box-left" class="step box" data-rel-x="600" data-rel-z="-600" data-rel-rotate-y="90">
-        <h4>Technical challenges</h4>
-        <p><i class="fa-solid fa-users-gear"></i> Usability</p>
-        <p><i class="fa-solid fa-signal"></i> Network cover</p>
-        <p><i class="fa-solid fa-battery-quarter"></i> Battery life of GPS logger</p>
-        <p><i class="fa-solid fa-person-running"></i> Live data</p>
-        <p><i class="fa-solid fa-arrow-up-from-bracket"></i> Data upload</p>
-
-      </div>
-      
-      <div id="box-top" class="step box" data-rel-reset data-x="-5000" data-y="-600" data-z="-600" data-rotate-x="90" data-rotate-y="0" _data-rotate-z="-270">
-        <p><i class="fa-solid fa-satellite"></i>  Sentinel example </p>
-        <div id="map"></div>
-      </div>
-      <div id="box-bottom" class="step box" data-rotate-x="270" data-rel-z="-1200" _data-scale="0.6">
-        <h4>Ground truth</h4>
-        <p><i class="fa-solid fa-tablet-screen-button"></i> Collect data samples</p>
-        <p><i class="fa-solid fa-cloud-sun-rain"> </i> Multispectral sensor</p>
-        <p><i class="fa-regular fa-pen-to-square"></i> additional data needed: </p>
-        <ul>
-          <li>what is 'good' pasture</li>
-          <li>how large is the daily radius of movement? (depending on animal species)</li>
-        </ul>
-      </div> 
-
-<!--       
       <div id="box-front1" class="step box1" data-rel-reset data-rel-z="-200" data-scale="0.6">Inside Front</div>
       <div id="box-right1" class="step box1" data-rel-reset data-rel-x="300" data-rel-z="-300" data-rel-rotate-y="90" data-scale="0.6">Inside Right</div>
+      <div id="box-right" class="step box" data-rel-reset data-rel-z="200">Right</div>
+      <div id="box-back" class="step box" data-rel-reset data-rel-x="500" data-rel-z="-500" data-rel-rotate-y="90">Back</div>
       <div id="box-back1" class="step box1" data-rel-reset data-rel-z="-200" data-scale="0.6">Inside Back</div>
       <div id="box-top1" class="step box1" data-rel-reset data-rel-y="-300" data-rel-z="-300" data-rel-rotate-x="90" data-scale="0.6">Inside Top</div>
+      <div id="box-top" class="step box" data-rel-reset data-rel-z="200">Top</div>
+      <div id="box-left" class="step box" data-rel-reset data-rel-x="500" data-rel-z="-500" data-rel-rotate-y="90">Left</div>
       <div id="box-left1" class="step box1" data-rel-reset data-rel-z="-200" data-scale="0.6">Inside Left</div>
       <div id="box-bottom1" class="step box1" data-rel-reset data-rel-x="300" data-rel-z="-300" data-rel-rotate-y="90" data-scale="0.6">Inside Bottom</div>
-       -->
+      <div id="box-bottom" class="step box" data-rel-reset data-rel-z="200">Bottom</div> 
+    -->
+    <div id="intro" class="step" data-rel-reset="all" data-x="-5000" data-y="0" data-z="0" data-rotate-y="0">
+      <p>Introduction</p>
+      <p>Pastoralismn, project area, climate etc.</p>
+      
+    </div>
+
+    <div id="area" class="step" data-rel-rotate-y="45" data-rel-z="-425" data-rel-x="1024">
+      <p>area</p>
+      
+      
+    </div>
+
+    <div id="climate_marsabit" class="step">
+      <p>Climate Marsabit</p>
+      <img src="pics/climate-graph.png" alt="">
+     
+    </div>
+
+    <div id="ring0-4" class="step">
+      <p> Sentinel example </p>
+      <div id="map"></div>
+    </div>
+
+    <div id="ring0-5" class="step">
+      <p>Ground data</p>
+      <ul style="list-style: none;">
+        <li><i class="fa-solid fa-satellite-dish"></i> GPS</li>
+        <li><i class="fa-solid fa-satellite-dish" style="color: darkgreen;"></i>...</li>
+      </ul>
+    </div>
+
+    <div id="ring0-6" class="step">
+      <p>Slide six</p>
+    </div>
+
+    <div id="ring0-7" class="step">
+      <p>Slide seven</p>
+    </div>
+
+    <div id="ring0-8" class="step">
+      <p>Slide eight</p>
+    </div>
+
    
-<!-- 
+
       <div id="gps-tracking" class="step ring1" data-rel-reset="all" data-x="0" data-y="0" data-z="0" data-rotate-y="0">
         <p>WP 5 - 2</p>
         <p>Develop real-time GPS-based tracking algorithms to monitor and assess e.g. grazing mobility
@@ -210,11 +212,88 @@
       <div id="ring1-8" class="step ring1">
         <p>Slide eight</p>
       </div>
- -->
+
+<!-- -------------------------- Hooman ------------------------------------------------------------ -->
+
+      <div id="wp1_hooman" class="step ring2" data-rel-reset="all" data-x="1000" data-y="0" data-z="-1514" data-rotate-x="90" data-rotate-y="-90" data-rotate-z="0">
+        <p>WP 5 - 1</p>
+        <p>Develop rangeland visual scoring using image processing and machine learning techniques</p>
+        
+      </div>
+
+      <div id="ring2-2" class="step ring2" data-rel-rotate-y="45" data-rel-z="-425" data-rel-x="1024" data-rel-y="0">
+        <p>The man, who will save the project</p>
+        <img src="pics/hooman.jpeg" alt="">
+      </div>
+
+      <div id="ring2-3" class="step ring2">
+        <p>Slide three</p>
+      </div>
+
+      <div id="ring2-4" class="step ring2">
+        <p>Slide four</p>
+      </div>
+
+      <div id="ring2-5" class="step ring2">
+        <p>Slide five</p>
+      </div>
+
+      <div id="ring2-6" class="step ring2">
+        <p>Slide six</p>
+      </div>
+
+      <div id="ring2-7" class="step ring2">
+        <p>Slide seven</p>
+      </div>
+
+      <div id="ring2-8" class="step ring2">
+        <p>Slide eight</p>
+      </div>
+
+<!------------------------------------------------------------------------------>
+
+    <div id="ring3-1" class="step ring3" data-rel-reset="all" data-x="-1000" data-y="100" data-z="-1514" data-rotate-x="-90" data-rotate-y="90" data-rotate-z="0">
+      <p>WP 5 - 3</p>
+      <p>Capture relevant dimensions of different phenomena (i.e. rangeland degradation or spreading of
+        diseases) from the data (descriptive analytics), identify reasons for these phenomena
+        (diagnostic analytics), and develop predictive models (predictive analytics).</p>
+     
+    </div>
+
+    <div id="ring3-2" class="step ring3" data-rel-rotate-y="45" data-rel-z="-425" data-rel-x="1024" data-rel-y="0" >
+      <p>Slide two</p>
+    </div>
+
+    <div id="ring3-3" class="step ring3">
+      <p>Slide three</p>
+    </div>
+
+    <div id="ring3-4" class="step ring3">
+      <p>Slide four</p>
+    </div>
+
+    <div id="ring3-5" class="step ring3">
+      <p>Slide five</p>
+    </div>
+
+    <div id="ring3-6" class="step ring3">
+      <p>Slide six</p>
+    </div>
+
+    <div id="ring3-7" class="step ring3">
+      <p>Slide seven</p>
+    </div>
+
+    <div id="ring3-8" class="step ring3">
+      <p>Slide eight</p>
+    </div>
+    
+  </div>
+</div>
 
 
 <!-- -------------------------------core------------------------------------------ -->
-</div>
+
     <div id="impress-toolbar"></div>
     <div id="impress-help"></div>
 

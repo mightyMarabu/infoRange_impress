@@ -51,7 +51,7 @@
     letter-spacing: -1px;
     border: solid 2px red;
 
-    opacity: 80%;
+    opacity: 40%;
     background-image: url('pics/logo2_web.png');
     background-repeat: no-repeat;
     background-position: top right;
@@ -96,6 +96,8 @@
   <body class="impress-not-supported">
 
     <div id="impress" data-width="2000" data-height="1500">     
+    
+    
       <div id="overview" class="step overview" data-rel-position="relative" data-x="-1000" data-y="-1500" data-z="100" data-scale="3" data-rotate-x="45" data-rotate-y="10" data-rotate-z="10">
           <div>
               <!-- <h2>InfoRange</h2> -->
@@ -107,7 +109,7 @@
           </div>
       </div>
       
-      <div id="box-front" class="step box" data-x="-5000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+      <!-- <div id="box-front" class="step box" data-x="-5000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
         <p>WP 5 - 2</p>
         <p>Develop real-time GPS-based tracking algorithms to monitor and assess e.g. grazing mobility
           (spatio-temporal land use patterns), grazing time and duration of individual herds.</p>
@@ -153,7 +155,77 @@
           <li>how large is the daily radius of movement? (depending on animal species)</li>
           <li>...</li>
         </ul>
-      </div> 
+      </div>  -->
+
+
+<!-- ---------------------- simple edition ----------------------------------------------------->
+
+<div id="overview" class="step overview" data-rel-position="relative" data-x="-1000" data-y="-1500" data-z="100" data-scale="3" data-rotate-x="45" data-rotate-y="10" data-rotate-z="10">
+  <div>
+      <!-- <h2>InfoRange</h2> -->
+      <img src="pics/logo2_web.png" alt="">
+      <p>Increasing efficiency in rangeland-based livestock value chains<br>
+        by co-designed <code>digital technologies</code><br>
+          and <code> machine learning approaches</code>.</p> 
+      
+  </div>
+</div>
+
+<div id="box-front" class="step box" data-x="-5000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+    <p>WP 5 - 2</p>
+    <p>Develop real-time GPS-based tracking algorithms to monitor and assess e.g. grazing mobility
+    (spatio-temporal land use patterns), grazing time and duration of individual herds.</p>
+</div>
+<div id="box-right" class="step box" data-rel-x="1200" data-rel-z="-600" _data-rel-rotate-y="90" >
+    <h4>Data</h4>
+    <h5>Identification of pasture</h5>
+    <p><i class="fa-solid fa-object-group"></i> Multispectral images (Sentinel 2 & SPOT)</p>
+    <p><i class="fa-solid fa-satellite-dish"></i> Radar (TerraSAR-X)</p> 
+    <p style="font-size: smaller;"><i class="fa-solid fa-fingerprint" style="color: brown;"></i> Data Access Request Authorization in progress</p>
+    <p><i class="fa-solid fa-cloud-sun-rain"> </i> Weather data</p>
+    <h5>Localisation of individual herds:</h5>
+    <p><i class="fa-solid fa-map-location-dot"></i> GPS</p>
+
+</div>
+<div id="box-back" class="step box" data-rel-x="1200" data-rel-z="-600" _data-rel-rotate-y="90">
+    <h4>Remote sensing challenges</h4>
+    <p><i class="fa-regular fa-image"></i> Image resolution</p>
+    <p><i class="fa-solid fa-cloud"> </i> Cloud coverage</p>
+    <p><i class="fa-solid fa-tree"></i> Tree cover</p>
+    <p><i class="fa-solid fa-droplet"></i> Identification of fountains</p>
+    <p></p>
+
+</div>
+
+<div id="box-top" class="step box" style="opacity: 100%;" data-rel-x="1200" data-rel-z="600" _data-rel-rotate-y="90" >
+    <p><i class="fa-solid fa-satellite"></i>  Sentinel example </p>
+    <div id="map"></div>
+</div>
+
+<div id="box-bottom" class="step box" data-rel-x="0" data-rel-z="-10" data-rel-rotate-y="180">
+  <h4>Ground truth</h4>
+  <p><i class="fa-solid fa-tablet-screen-button"></i> Collect data samples</p>
+  <p><i class="fa-solid fa-cloud-sun-rain"> </i> Multispectral sensor</p>
+  <p><i class="fa-regular fa-pen-to-square"></i> additional data needed: </p>
+  <ul>
+    <li>what is 'good' pasture</li>
+    <li>how large is the daily radius of movement? (depending on animal species)</li>
+    <li>...</li>
+  </ul>
+</div> 
+
+<div id="box-left" class="step box" data-rel-x="-1600" data-rel-z="0" _data-rel-rotate-y="90">
+  <h4>Technical challenges</h4>
+  <p><i class="fa-solid fa-users-gear"></i> Usability</p>
+  <p><i class="fa-solid fa-signal"></i> Network cover</p>
+  <p><i class="fa-solid fa-battery-quarter"></i> Battery life of GPS logger</p>
+  <p><i class="fa-solid fa-person-running"></i> Live data</p>
+  <p><i class="fa-solid fa-arrow-up-from-bracket"></i> Data upload</p>
+
+</div>
+
+
+
 
 <!--       
       <div id="box-front1" class="step box1" data-rel-reset data-rel-z="-200" data-scale="0.6">Inside Front</div>
